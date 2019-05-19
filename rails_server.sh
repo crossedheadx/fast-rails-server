@@ -55,7 +55,10 @@ function install-all {
 }
 
 #BEGIN
+echo 'start initial upgrade check'
 full-up 
-install-all
+echo 'start full install'
+install-all 
+echo 'securing ssh'
 ssh-optimization
 
